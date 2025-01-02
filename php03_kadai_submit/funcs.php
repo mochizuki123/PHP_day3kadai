@@ -9,15 +9,7 @@ function h($str)
 function db_conn()
 {
     try {
-        $db_name = 'ym-deploy_ph02'; //データベース名
-        $db_id   = 'ym-deploy_ph02'; //アカウント名
-        $db_pw   = 'ym12345678'; //パスワード：MAMPは'root'
-        $db_host = 'mysql3104.db.sakura.ne.jp'; //DBホスト
-        $pdo = new PDO('mysql:dbname=' . $db_name . ';charset=utf8;host=' . $db_host, $db_id, $db_pw);
-        return $pdo;
-    } catch (PDOException $e) {
-        exit('DB Connection Error:' . $e->getMessage());
-    }
+      //DB情報、パスワード等の削除
 }
 
 //※関数を作成し、内容をreturnさせる。
